@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+  }
+.completed{
+  color:crimson;
+  text-decoration: line-through;
+}
+.custom-checkbox {
+  pointer-events: none; 
+  opacity: 0.3; 
+}
