@@ -40,6 +40,8 @@ export class HomeComponent implements OnInit {
   fetchTodos(): void {
     this.apiService.fetchTodos().subscribe(
       (res: ResponseAPI) => {
+        this.todos = res.todos;
+        this.dataSource.data = this.todos;
         console.log(res.todos); 
       },
       (error) => {
